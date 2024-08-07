@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>요청객체의 주요API</h1>
+<%
+	//요청방식 조회하기
+	String method = request.getMethod();
+
+	String requestURI = request.getRequestURI();
+%>
+	<h3>요청라인 정보</h3>
+	<dl>
+		<dt>요청방식</dt><dd><%=method %></dd>
+		<dt>요청URL</dt><dd><%=requestURI %></dd>
+	</dl>
+</body>
+</html>

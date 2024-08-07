@@ -1,0 +1,24 @@
+package hr.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
+
+import hr.utils.ConnectionUtils;
+import hr.vo.JobList;
+
+public class JobDao {
+	public List<JobList> getAllJobs() throws SQLException{
+		String sql = """
+				SELECT *
+				FROM JOBS
+				ORDER BY JOBS
+				""";
+		Connection con = ConnectionUtils.getConnection();
+		PreparedStatement pstmt = con.prepareStatement(sql);
+		ResultSet rs = pstmt.executeQuery();
+		
+		return 0
+	}
+}

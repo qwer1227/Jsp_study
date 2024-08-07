@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<H1>부서목록</H1>
+<p>전체 부서목록을 제공합니다</p>
+
+<table border="1">
+	<thead>
+		<tr>
+			<th>부서아이디</th>
+			<th>부서명</th>
+			<th>부서관리자</th>
+			<th>소재지</th>
+			<th>소속직원수</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>10</th>
+			<th>홍길동</th>
+			<th>서울</th>
+			<th>으악</th>
+			<th>어이</th>
+		</tr>
+		<tr>
+			<th>10</th>
+			<th>홍길동</th>
+			<th>서울</th>
+			<th>으악</th>
+			<th>어이</th>
+		</tr>
+		<tr>
+			<th>10</th>
+			<th>홍길동</th>
+			<th>서울</th>
+			<th>으악</th>
+			<th>어이</th>
+		</tr>
+		<tr>
+			<th>10</th>
+			<th>홍길동</th>
+			<th>서울</th>
+			<th>으악</th>
+			<th>어이</th>
+		</tr>
+		<tr>
+			<th>10</th>
+			<th>홍길동</th>
+			<th>서울</th>
+			<th>으악</th>
+			<th>어이</th>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
