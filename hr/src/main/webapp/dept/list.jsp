@@ -36,7 +36,7 @@ List<DeptList> depts = deptdao.findAllDepts();
 	<%
 		for(DeptList dept : depts){
 	%>
-.
+
 	
 		<tr>
 			<th><%=dept.getId() %></th>

@@ -1,0 +1,13 @@
+package hr.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import hr.vo.Loc;
+
+public class LocDao {
+	
+	public List<Loc> getAllLocations()  throws SQLException{
+	
+	}
+}

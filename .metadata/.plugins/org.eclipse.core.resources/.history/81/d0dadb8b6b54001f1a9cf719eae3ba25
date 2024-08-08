@@ -1,0 +1,12 @@
+package hr.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import hr.vo.Emp;
+
+public class EmpDao {
+	public List<Emp> getEmployeeByDeptId(int deptId)throws SQLException{
+		
+	}
+}

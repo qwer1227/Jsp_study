@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+
+	/*
+		요청 URL: http://localhost/hr/dept/register.jsp
+		
+		요청 URI: /hr/dept/register.jsp
+		
+		폼 데이터: name = xxx&managerid = xxx&locationId=xxx
+		
+		요청파라미터 정보
+		name		value
+		name		xxx
+		managerid	xxx
+		locationid	xxx
+	*/
+	
+	String name = request.getParameter("name");
+	int managerId = Integer.parseInt(request.getParameter("managerId"));
+	int locationId = request.getParameter("locationId");
+
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

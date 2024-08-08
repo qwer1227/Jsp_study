@@ -1,0 +1,26 @@
+package hr.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
+
+import hr.utils.ConnectionUtils;
+import hr.vo.Loc;
+
+public class LocDao {
+	
+	public List<Loc> getAllLocations()  throws SQLException{
+		String sql="""
+				select *
+				from locations
+				order by location_id asc;
+				""";
+		
+		Connection con = ConnectionUtils.getConnection();
+		
+		PreparedStatement pstmt = con.prepareStatement(sql);
+		
+		return 0
+	}
+}
