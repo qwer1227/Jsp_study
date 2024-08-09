@@ -34,15 +34,8 @@
 	
 	//DeptDao객체의 insertDept()메소드에 새 부서정보가 있는 Dept객체를 전달해서 실행시킨다
 	deptDao.insertDept(dept);
+	
+	//부서목록을 제공해주는 list.jsp를 재요청하게 하는 응답을 보낸다.
+	response.sendRedirect("list.jsp");
 
 %>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html>

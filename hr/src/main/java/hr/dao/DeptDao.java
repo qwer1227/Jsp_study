@@ -16,6 +16,64 @@ import jakarta.annotation.Nullable;
 
 public class DeptDao {
 
+	public void updateDept(Dept dept) throws SQLException{
+		String sql = """
+				update departments
+				set
+					department_name = ?,
+					manager_id = ?,
+					location_id =?
+				where
+					department_id = ?
+				""";
+		
+		Connection con = ConnectionUtils.getConnection();
+		
+		PreparedStatement pstmt = con.prepareStatement(sql);
+		
+		pstmt.setString(1, dept.getName());
+		pstmt.setInt(2, dept.getManagerId());
+		pstmt.setInt(3, dept.getLocationId());
+		pstmt.setInt(4, dept.getId());
+		
+		pstmt.executeQuery();
+		
+		pstmt.close();
+		con.close();
+	}
+	
+	public Dept getDeptById(int deptId) throws SQLException{
+		String sql = """
+				select *
+				from departments
+				where department_id = ?
+				""";
+		
+		Dept dept = null;
+		
+		Connection con = ConnectionUtils.getConnection();
+		
+		PreparedStatement pstmt = con.prepareStatement(sql);
+		
+		pstmt.setInt(1, deptId);
+		
+		ResultSet rs = pstmt.executeQuery();
+		
+		while(rs.next()) {
+			dept = new Dept();
+			dept.setId(rs.getInt("department_id"));
+			dept.setName(rs.getString("department_name"));
+			dept.setManagerId(rs.getInt("manager_id"));
+			dept.setLocationId(rs.getInt("location_id"));
+		}
+		
+		rs.close();
+		pstmt.close();
+		con.close();
+		
+		return dept;
+	}
+	
 	/**
 	 * 새 부서정보가 있는 Dept객체를 전달받아서 저장시킨다
 	 * @param dept 새 부서정보

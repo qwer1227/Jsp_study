@@ -30,6 +30,7 @@ List<DeptList> depts = deptdao.findAllDepts();
 			<th>부서관리자</th>
 			<th>소재지</th>
 			<th>소속직원수</th>
+			<th></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -44,6 +45,7 @@ List<DeptList> depts = deptdao.findAllDepts();
 			<th><%=dept.getManagerName() %></th>
 			<th><%=dept.getCity() %></th>
 			<th><%=dept.getCnt() %>명</th>
+			<td><a href="modifyform.jsp?id=<%=dept.getId() %>">수정</a></td>
 		</tr>
 		
 		<%
