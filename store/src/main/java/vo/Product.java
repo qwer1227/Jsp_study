@@ -63,6 +63,13 @@ public class Product {
 	public void setStock(int stock) {
 		this.stock = stock;
 	}
+	/**
+	 * 테스트의 줄바꿈문자를 br태그로 변환해서 반환하는 메소드다
+	 * @return
+	 */
+	public String getHtmlDescription()	{
+		return description.replace(System.lineSeparator(), "<br>");
+	}
 
 	public String getDescription() {
 		return description;

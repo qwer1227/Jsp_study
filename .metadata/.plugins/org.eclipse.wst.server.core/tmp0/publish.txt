@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Fri Aug 09 17:37:36 KST 2024
+#Tue Aug 13 09:13:18 KST 2024
 org.eclipse.jst.jee.server\:store=C\:\\app\\apache-tomcat-10.1.26\\wtpwebapps\\store
 org.eclipse.jst.jee.server\:app=C\:\\app\\apache-tomcat-10.1.26\\wtpwebapps\\app
 org.eclipse.jst.jee.server\:hr=C\:\\app\\apache-tomcat-10.1.26\\wtpwebapps\\hr

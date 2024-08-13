@@ -16,7 +16,7 @@
         <a class="nav-link active" href="/store/index.jsp">홈</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/store/admin/product/home.jsp">상품관리</a>
+        <a class="nav-link" href="/store/admin/product/home.jsp?page=1">상품관리</a>
       </li>
     </ul>
   </div>
